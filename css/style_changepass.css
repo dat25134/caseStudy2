@@ -1,0 +1,52 @@
+.changePass label,.changePass input,.changePass {
+    display: block;
+}
+
+.changePass{
+    border: solid 1px;
+    width: 500px;
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+    padding: 100px;
+    line-height: 50px;
+    font-size: 150%;
+    margin-bottom: 50px;
+    box-shadow: black 5px 5px 5px;
+}
+.changePass h2{
+    text-align: center;
+    margin-bottom: 50px;
+    color: tomato;
+}
+
+.changePass input{
+    width: 100%;
+    padding: 10px 50px;
+    border: gray 1px solid;
+    border-radius: 5px;
+    font-size: 130%;
+}
+
+.changePass #submit{
+    display: block;
+    padding: 10px 50px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+    font-size: 140%;
+    letter-spacing: 10px;
+    box-shadow: black 5px 5px 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+#noteOk{
+    color: green;
+}
+
+#notOk{
+    color: red;
+}

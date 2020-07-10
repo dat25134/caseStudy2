@@ -1,0 +1,237 @@
+.step_container {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.step_container .step {
+    padding: 10px 25px;
+    border: gray 1px solid;
+    color: gray;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+}
+
+.step_container .step1 {
+    padding: 10px 25px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    background-color: yellowgreen;
+}
+
+.step_container .solid {
+    width: 100px;
+    border: 1px solid gray;
+    height: 1;
+    margin: auto 0;
+}
+
+.step_container .solid1 {
+    width: 100px;
+    border: 1px solid yellowgreen;
+    height: 1;
+    margin: auto 0;
+}
+
+.router {
+    padding: 10px 100px;
+    background-color: #f7f7f7;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 130%;
+    font-weight: bold;
+}
+
+.router a {
+    text-decoration: none;
+    color: rgb(39, 34, 34);
+}
+
+.router a:hover {
+    color: rgb(126, 122, 122);
+}
+
+.diachi {
+    display: flex;
+}
+
+.diachi .left {
+    flex: 60%;
+    padding: 50px 25px;
+}
+
+.diachi .right {
+    flex: 40%;
+    padding: 50px 25px;
+}
+
+.diachi .left table {
+    border: gray 1px solid;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    margin: auto;
+    padding: 25px 0px;
+}
+
+.diachi .left caption {
+    border: gray 1px solid;
+    border-bottom: none;
+    border-radius: 10px 10px 0px 0px;
+    background-color: rgb(212, 209, 209);
+    padding: 10px;
+    font-weight: bold;
+}
+
+.diachi .left table input {
+    padding: 10px 20px;
+    width: 400px;
+    border-radius: 5px;
+    border: gray 1px solid;
+}
+
+.diachi .left table td {
+    padding-right: 20px;
+    text-align: right;
+}
+
+.diachi .left table tr {
+    height: 60px;
+}
+
+.diachi .left table textarea {
+    padding-right: 20px;
+    border: gray 1px solid;
+    border-radius: 5px;
+}
+
+.diachi .right .caption {
+    border: gray 1px solid;
+    border-bottom: none;
+    border-radius: 10px 10px 0px 0px;
+    background-color: rgb(212, 209, 209);
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.diachi .right .caption label {
+    color: rgb(163, 155, 155);
+}
+
+.diachi .right .sanpham {
+    padding: 10px 20px;
+    border: gray 1px solid;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.diachi .right .sanpham .row {
+    display: flex;
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+    padding-top: 20px ;
+}
+
+.diachi .right .sanpham .row .ele {
+    width: 100px;
+    height: 75px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+}
+
+.diachi .right .sanpham .row .ele .ten, .diachi .right .sanpham .row .ele .sl, .diachi .right .sanpham .row .ele .price {
+    margin: auto;
+}
+
+.diachi .right .sanpham .row_total {
+    display: flex;
+    padding: 10px 50px;
+}
+
+.diachi .right .sanpham .row_total label {
+    flex: 50%;
+    color: tomato;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.diachi .right .sanpham .row_total span {
+    flex: 50%;
+    text-align: right;
+    font-weight: bold;
+    font-size: 130%;
+    color: tomato;
+}
+
+.diachi .right .sanpham #submit {
+    width: 100%;
+    text-align: center;
+    padding: 10px 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(250, 155, 31);
+    color: white;
+    font-weight: bold;
+}
+.comfirm {
+    width: 100%;
+    min-width: 1300px;
+    padding: 10px 100px;
+}
+.comfirm .content{
+    width: 100%;
+}
+.comfirm .top{
+    width: 100%;
+    display: flex;
+    background-color:  #f2f2f2;
+    padding: 10px 50px;
+    border-radius: 10px 10px 0px 0px;
+    border: #d4d4d4 solid 1px;
+}
+.comfirm .top span{
+    flex: 50%;
+    font-size: 130%;
+    font-weight: bolder;
+}
+.comfirm .top input{
+    padding: 5px 10px;
+    width: 50%;
+    text-align: center;
+    background-color: orange ;
+    color: white;
+    font-size: 80%;
+    font-weight: bold;
+    border: none;
+}
+.comfirm .detail{
+    width: 100%;
+}
+
+.comfirm .detail caption{
+    padding-bottom: 10px;
+    border-bottom: #d4d4d4 1px solid;
+    text-align: left;
+    padding-left: 100px;
+    padding-top: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    border-left: #d4d4d4 1px solid;
+    border-right: #d4d4d4 1px solid;
+}
+.comfirm table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    line-height: 50px;
+    border: #d4d4d4 1px solid;
+}
+.comfirm table tr,td,th{
+    border: #d4d4d4 dashed 1px;
+}
+
+.comfirm table tr:nth-child(even){background-color: #f2f2f2;}

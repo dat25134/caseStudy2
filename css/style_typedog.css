@@ -1,0 +1,130 @@
+.typedog{
+    min-width: 1200px;
+    padding: 0px 50px;
+}
+.typedog .noidung {
+    display: flex;
+    padding-top: 50px;
+    border-top: royalblue solid 2px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.typedog img {
+    width: 100%;
+    height: 200px;
+}
+.typedog .product{
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    border: 1px solid #eeeeee;
+    line-height: 50px;
+    margin: 25px 20px;
+    position: relative;
+}
+.typedog a{
+    border: 1px solid ;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.typedog h3 {
+    font-size: 150%;
+    padding-left: 25px;
+}
+
+.typedog .row{
+    display: flex;
+    color: #222;
+}
+.typedog span{
+    flex: 50%;
+}
+.typedog #buy{
+    color: #eb1a20;
+    border-color: #eb1a20;
+}
+.typedog #buy:hover{
+    color: white;
+    background-color: #eb1a20;
+}
+
+.typedog #detail{
+    color: #007df5;
+    border-color: #007df5;
+}
+.typedog #detail:hover{
+    color: white;
+    background-color: #007df5;
+}
+.page{
+  display: flex;
+  justify-content: center;
+}
+
+#arrow_left{
+    font-size: 300%;
+    margin: auto 0px;
+    opacity: 0.7;
+    margin-right: 20px;
+    padding: 0px 20px;
+}
+#arrow_right{
+    font-size: 300%;
+    margin: auto 0px;
+    opacity: 0.7;
+    padding: 0px 20px;
+}
+#arrow_right:hover,#arrow_left:hover{
+    background-color: rgb(197, 194, 194);
+    opacity: 0.6;
+}
+
+.typedog #sale, .banchay #sale{
+    position: absolute;
+    top: 140px;
+    right: 150px;
+}
+.typedog #sale img,.banchay #sale img {
+    width: 100px;
+    height: 80px;
+}
+.typedog .row #percent{
+    position: relative;
+    display: block;
+    width: 100px;
+    top: -63px;
+    left: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    text-shadow: black -3px 0px 17px;
+}
+.router{
+    padding: 10px 100px;
+    background-color: #f7f7f7;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 130%;
+    font-weight: bold;
+}
+.router a{
+    text-decoration: none;
+    color: rgb(39, 34, 34);
+}
+
+.typedog .caption{
+    border: rgb(197, 194, 194) solid 1px;
+    border-radius: 50px 20px;
+}
+.typedog .caption .head{
+    display: inline-block;
+    padding: 20px 50px;
+    background-color: lavender;
+    border: 2px solid rgb(178, 178, 219);
+    padding: 10px;
+    border-radius: 50px 20px;
+    font-size: 150%;
+    font-weight: bold;
+    color: rgb(39, 34, 34);
+
+}

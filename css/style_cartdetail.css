@@ -1,0 +1,117 @@
+.router{
+    padding: 10px 100px;
+    background-color: #f7f7f7;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 130%;
+    font-weight: bold;
+}
+.router a{
+    text-decoration: none;
+    color: rgb(39, 34, 34);
+}
+
+.router a:hover{
+    color: rgb(126, 122, 122);
+}
+.cart-detail{
+    display: flex;
+    margin-bottom: 25px;
+}
+.cart-detail .left{
+    flex: 70%;
+    padding: 20px 25px;
+    border-right: gray solid 1px;
+}
+.cart-detail .right{
+    flex: 30%;
+    padding: 20px 25px;
+}
+.cart-detail table{
+width: 100%;
+border-collapse: collapse;
+margin-top: 25px;
+color: rgb(91, 57, 114);
+}
+.cart-detail th,td{
+    padding: 10px 20px;
+    border-bottom: rgb(194, 191, 191) 1px solid;
+    text-align: center;
+}
+.cart-detail .right div{
+    padding: 10px 25px;
+    border-bottom: rgb(194, 191, 191) 1px solid;
+    color: rgb(91, 57, 114);
+}
+
+.cart-detail .right #creatBill{
+    display: block;
+    padding: 10px 25px;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: orangered;
+    text-align: center;
+    border: none;
+    margin-top: 80px;
+}
+
+.cart-detail .right #con-buy{
+    display: block;
+    margin-top: 50px;
+    text-decoration: none;
+    color: rgb(136, 126, 126);
+    font-weight: bold;
+    font-size: 90%;
+
+}
+.cart-detail .right .row {
+    display:  flex;
+}
+.cart-detail .right .row label{
+    flex: 50%;
+}
+.cart-detail .right .row span{
+    flex: 50%;
+    text-align: right;
+    color: rgb(300, 141, 6);
+    font-weight: bold;
+}
+
+.cart-detail td a {
+    text-decoration: none;
+    color: rgb(136, 126, 126);
+}
+
+ .step_container {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.step_container .step{
+    padding: 10px 25px;
+    border: gray 1px solid;
+    color: gray;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+}
+.step_container .step1{
+    padding: 10px 25px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    background-color: yellowgreen;
+}
+.step_container .solid{
+    width: 100px;
+    border: 1px solid gray ;
+    height: 1;
+    margin: auto 0;
+
+}
+

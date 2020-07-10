@@ -1,0 +1,245 @@
+@import url('https://fonts.google.com/specimen/Poppins');
+:root{
+    --bg-primary: hsl(0, 100%, 74%);
+    --bg--btn: hsl(248, 32%, 49%);
+    --bg-natural: hsl(154, 59%, 51%);
+    --bg-blue: hsl(249, 10%, 26%);
+    --bg-gray: hsl(246, 25%, 77%);
+    --bg-naturalWeight: hsl(154, 80%, 30%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: rgb(242, 242, 247);
+    padding: 100px;
+}
+.border{
+    padding: 20px;
+    background-color: lavender;
+}
+.container{
+    display: flex;
+    background-color: white;
+    color: gray;
+}
+.container_left{
+    flex: 40%;
+    height: "window.innerWidth";
+    text-align: left;
+    padding: 280px 180px;
+
+}
+.container_left h2{
+    display: inline;
+    letter-spacing: 1px;
+    text-align: justify;
+    font-size: 250%;
+}
+.container_left p{
+    margin-top: 25px;
+}
+.container_right{
+    flex: 60%;
+    height: "window.innerWidth";
+    padding: 100px 0px;
+}
+.container_right button{
+    width: 452px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: var(--bg--btn) ;
+    border: none;
+    color: white;
+    box-shadow: 1px 5px 5px gray;
+    cursor: pointer;
+}
+.container_right button:hover{
+    opacity: 0.8;
+}
+.container_right form input{
+    display: block;
+    height: 50px;
+    width: 350px;
+    border-radius: 5px;
+    margin: 20px 12px;
+    padding-left: 25px;
+}
+.container_right form input::placeholder{
+    opacity: 0.5;
+    font-weight: bold;
+}
+.container_right form {
+    background-color: white;
+    width: 400px;
+    height: 425px;
+    border-radius: 10px;
+    padding: 10px 25px;
+    margin-top: 20px;
+    display: inline-table;
+    text-align: center;
+
+}
+.container_right form .note,.icon_error{
+    display: none;
+}
+.container_right form .icon_error{
+    position: relative;
+    top: -59px;
+    left: 350px;
+}
+.container_right form .note{
+    color: red;
+    font-size: 75%;
+    font-style: italic;
+    position: relative;
+    margin-top: -38px;
+    text-align: right;
+    left: -10px;
+}
+
+#submit{
+    background-color: var(--bg-natural);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    box-shadow: 1px 5px 5px gray;
+    cursor: pointer;
+    width: 380px;
+}
+#submit:hover{
+    background-color: var(--bg-naturalWeight);
+}
+.container_right form h6 {
+    color: var(--bg-gray);
+    margin-top: 25px;
+}
+.container_right form h6 span {
+    color: var(--bg-primary);
+}
+
+/* screen 375px */
+@media screen and (max-width:375px){
+.container{
+    display: block;
+}
+.container_left{
+    padding: 100px 40px;
+    text-align: center;
+}
+.container_left h2{
+    letter-spacing: 0px;
+    font-size: 200%;
+}
+.container_right button{
+ width: 100%;
+ padding: 20px 50px;
+ display: inline-block;
+ height: 80px;
+ line-height: 22px;
+ 
+}
+.container_right {
+    padding: 0px 50px;
+}
+.container_right form{
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+    margin-top: 25px;
+}
+.container_right .input{
+    width: 60%;
+    margin-left: 65px;
+}
+.container_right #submit {
+    width: 68%;
+    margin-left: 65px;
+}
+.container_right form input::placeholder{
+    opacity: 1;
+    font-weight: bold;
+}
+.container_right form h6{
+    padding: 0px 70px;
+}
+.container_right form .icon_error{
+    left: 290px;
+}
+.container_right form .note{
+    left: -59px;
+}
+.container_right{
+width: 100%;
+padding: 100px 40px;
+margin: 0;
+}
+.container_left{
+width: 100%;
+}
+
+}
+/* iphone5s */
+@media screen and (max-width:320px){
+    .container{
+        display: block;
+    }
+    .container_left{
+        padding: 100px 40px;
+        text-align: center;
+    }
+    .container_left h2{
+        letter-spacing: 0px;
+        font-size: 200%;
+    }
+    .container_right button{
+     width: 100%;
+     padding: 20px 50px;
+     display: inline-block;
+     height: 80px;
+     line-height: 22px;
+     
+    }
+    .container_right {
+        padding: 0px 50px;
+    }
+    .container_right form{
+        width: 100%;
+        padding: 0px;
+        text-align: center;
+        margin-top: 25px;
+    }
+    .container_right .input{
+        width: 60%;
+        margin-left: 50px;
+    }
+    .container_right #submit {
+        width: 68%;
+        margin-left: 65px;
+    }
+    .container_right form input::placeholder{
+        opacity: 1;
+        font-weight: bold;
+    }
+    .container_right form h6{
+        padding: 0px 50px;
+    }
+    .container_right form .icon_error{
+        left: 245px;
+    }
+    .container_right form .note{
+        left: -50px;
+    }
+    .container_right{
+    width: 100%;
+    padding: 100px 40px;
+    margin: 0;
+    }
+    .container_left{
+    width: 100%;
+    }
+    
+    }

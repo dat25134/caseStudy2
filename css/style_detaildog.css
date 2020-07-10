@@ -1,0 +1,192 @@
+.router{
+    padding: 10px 100px;
+    background-color: #f7f7f7;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 130%;
+    font-weight: bold;
+}
+.router a{
+    text-decoration: none;
+    color: rgb(39, 34, 34);
+}
+
+.router a:hover{
+    color: rgb(126, 122, 122);
+}
+
+/* slide-show */
+.detail-dog img {
+    vertical-align: middle;
+  }
+  
+  /* Position the image container-content (needed to position the left and right arrows) */
+  .detail-dog .container-content {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .detail-dog .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .detail-dog .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .detail-dog .prev,
+  .detail-dog .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .detail-dog .next {
+    right: 50px;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .detail-dog .prev:hover,
+  .detail-dog .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .detail-dog .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* container-content for image text */
+  .detail-dog .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .detail-dog .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .detail-dog .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .detail-dog .demo {
+    opacity: 0.6;
+  }
+  
+  .detail-dog .active,
+  .detail-dog .demo:hover {
+    opacity: 1;
+  }
+
+.detail-dog .images-detail{
+    width: 100%;
+    display: flex;
+}
+.detail-dog .container_left{
+    flex: 50%;
+    min-width: 650px;
+    /* padding: 25px 50px; */
+}
+
+.detail-dog .container_right{
+    flex: 50%;
+    min-width: 60px;
+    padding: 25px 50px;
+    
+}
+
+.detail-dog .container-content{
+    padding: 25px 50px;
+}
+.detail-dog h2{
+    padding: 0px 50px;
+}
+.detail-dog h2 div{
+    color: #333;
+    padding: 10px 0px 15px 25px;
+    border-bottom: royalblue 0.5px solid ;
+}
+
+
+.detail-dog .detail {
+    padding: 20px 25px;
+    background-color: rgb(233, 232, 232);
+}
+
+.detail-dog .row {
+    display: flex;
+    margin: 10px 0px;
+    margin-top: 20px;
+}
+.detail-dog .row label{
+    flex: 50%;
+}
+.detail-dog .container_right table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+.detail-dog .container_right td,th{
+    border: 1px solid black;
+    padding: 10px 20px;
+
+}
+.detail-dog .container_right th{
+    background-color: rgb(233, 232, 232);
+}
+.detail-dog .container_right td{
+    color: #eb1a20;
+    font-weight: bold;
+}
+.detail-dog #row1 {
+    padding: 20px 20px;
+    background-color: rgb(160, 160, 224);
+}
+
+.detail-dog .container_right p{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.detail-dog .container_right a{
+    width: 100%;
+    font-size: 150%;
+    color: white;
+    background-color :#eb1a20 ;
+    padding: 10px 50px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    box-shadow: black 5px 5px 5px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
