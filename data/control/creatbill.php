@@ -8,5 +8,5 @@ $getIdBill = $creatBill->addBill($_SESSION['user']['iduser'],$_SESSION['bill'],$
 $idbill = (int)$getIdBill['idbill'];
 $creatBill->addBillDetail($_SESSION['cartItem'],$idbill);
 $_SESSION['cart']=[];
-header('Location: http://localhost/CODEGYM/caseStudy2/index.php')
+header('Location: http://localhost/CODEGYM/caseStudy2/data/view/thanksforbuy.php')
 ?>

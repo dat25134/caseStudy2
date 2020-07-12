@@ -73,4 +73,15 @@ class UserDAO
         $statement->bindParam(6, $status);
         $statement->execute();
     }
+
+    public function searchUser($searchText){
+        $sql = "SELECT * FROM product.user where iduser like ?";
+        $statement = $this->pdo->prepare($sql);
+        $searchText = "%".$searchText."%";
+        $statement->bindParam(1, $searchText);
+        $statement->execute();
+        $statement->setFetchMode(PDO::FETCH_ASSOC); 
+        $result =$statement->fetchAll();
+        return $result;
+    }
 }

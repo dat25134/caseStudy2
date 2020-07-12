@@ -16,8 +16,8 @@
         else echo "<div class='pageHOT'>";
       } ?>
       <div class="product">
-        <img src="<?php echo $value['imageURL'] ?>">
-        <h3><?php echo $value['ten'] ?></h3>
+        <a href="http://localhost/CODEGYM/caseStudy2/data/control/detaildog.php?id=<?php echo $value['idDog'] ?>"><img src="<?php echo $value['imageURL'] ?>"></a>
+        <h3><a href="http://localhost/CODEGYM/caseStudy2/data/control/detaildog.php?id=<?php echo $value['idDog'] ?>" style="color: black; text-decoration: none;"><?php echo $value['ten'] ?></a></h3>
         <div class="row">
           <span><i class="fa fa-check"></i> Nguồn gốc: </span><span><label for="ngouongoc"> <?php echo $value['nguongoc'] ?></label></span>
         </div>
@@ -43,7 +43,7 @@
         </div>
 
         <div class="row">
-          <span><a href="http://localhost/CODEGYM/caseStudy2/data/control/addtocart.php?iddog=<?php echo $value['idDog'] ?>" id="buy">Thêm giỏ hàng</a></span><span><a href="http://localhost/CODEGYM/caseStudy2/data/control/detaildog.php?id=<?php echo $value['idDog'] ?>" id="detail">Chi tiết</a></span>
+          <span style="text-align: center;"><a href="http://localhost/CODEGYM/caseStudy2/data/control/addtocart.php?iddog=<?php echo $value['idDog'] ?>" id="buy"><i class="fa fa-shopping-cart" style="width:50px; text-align:center"></i></a></span>
         </div>
 
         <div class="row">

@@ -1,0 +1,21 @@
+.thanks {
+    padding: 100px 250px;
+}
+.thanks .content{
+    padding: 20px 50px;
+    border: wheat 2px solid;
+    text-align: center;
+}
+.thanks h2 {
+
+    color: #4BB543;
+    margin-bottom: 20px;
+}
+.thanks p{
+    color: black;
+}
+
+.thanks a{
+    margin-top: 20px;
+    font-size: 120%;
+}
