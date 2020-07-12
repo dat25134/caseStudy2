@@ -12,6 +12,7 @@
 session_start(); 
 if ($_SESSION['login1st']){
     echo "<script>alert ('Xin chào". $_SESSION['user']['firstName'].$_SESSION['user']['lastName']."')</script>";
+    $_SESSION['login1st'] = false;
 };
 ?>
     <?php include_once "view/header.php"; ?>

@@ -8,6 +8,9 @@
     background-color: #222;
     border-color: #080808;
     color: #9d9d9d;
+    position: sticky;
+    width: 100%;
+    top: 0px;
 }
 
 .header .left {
@@ -80,7 +83,7 @@
 }
 
 .dashboard {
-    padding: 50px 25px 0px 225px;
+    padding: 100px 25px 0px 225px;
 }
 
 .dashboard .info {
@@ -90,10 +93,12 @@
 .dashboard .group {
     width: 250px;
     /* padding: 10px 20px 0px 20px; */
+    height: 147px;
     margin: 0px;
     margin-right: 50px;
     color: white;
     border-radius: 20px;
+    display: list-item;
 }
 
 .dashboard .group .row {
@@ -145,4 +150,90 @@
 .dashboard .group4 {
     border-color: #d9534f;
     background-color: #d9534f;
+}
+
+.table{
+    padding: 50px 0px 0px 225px;
+}
+.table table{
+    border-collapse: collapse;
+}
+.table caption #cap{
+    font-size: 150%;
+    color: black;
+    font-weight: bold;
+    padding-left: 100px;
+
+    margin-bottom: 20px;
+}
+.table caption {
+    border-bottom: gray solid 2px;
+    margin-bottom: 20px;
+}
+
+.table #add {
+    display: inline-block;
+    margin-left: 350px;
+}
+.table table,th,td{
+    border: 1px rgb(194, 193, 193) solid;
+    text-align: center;
+}
+.table .w3-button {
+    padding: 2px 5px ;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.table .w3-container{
+    text-align: left;
+}
+.table .w3-modal-content{
+    padding: 10px 50px;
+}
+.table .w3-container .row{
+    display: flex;
+}
+.table .w3-container .row label {
+    flex: 20%;
+    padding: 10px 10px;
+}
+.table .w3-container .row input {
+    flex: 70%;
+    border-radius: 5px;
+}
+
+.table .w3-container .row .w3-button{
+    width: 300px;
+}
+.table select{
+    flex: 70%;
+    height: 35px;
+    border-radius: 5px ;
+}
+
+.table a{
+    border: red 1px solid;
+    color: red;
+    text-decoration: none;
+    padding: 2px 5px ;
+    border-radius: 4px;
+}
+.table a:hover{
+    border: red 1px solid;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+}
+
+.userList th,td {
+    padding: 10px;
+}
+
+.search {
+    display: inline-block;
+}
+
+#searchBtn {
+    background-color: white;
+    border: none;
 }

@@ -17,6 +17,9 @@
                 <div class="dropdown">
                     <a class="dropbtn"><i class="fa fa-user" aria-hidden="true"></i> <?php echo "Chào " . $_SESSION['user']['firstName'] . " " . $_SESSION['user']['lastName']; ?></a>
                     <div class="dropdown-content">
+                        <?php if ($_SESSION['user']['isAdmin']=='true'):?>
+                        <a href="http://localhost/CODEGYM/caseStudy2/data/dashboard/index.php"> Dashboard </a>
+                        <?php endif ?>
                         <a href="http://localhost/CODEGYM/caseStudy2/data/view/infoAcc.php">Thông tin tài khoản</a>
                         <a href="">Lịch sử mua hàng</a>
                         <a href="http://localhost/CODEGYM/caseStudy2/data/view/changePass.php">Đổi mật khẩu</a>

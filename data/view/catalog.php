@@ -1,4 +1,3 @@
-
 <link rel="stylesheet" href="http://localhost/CODEGYM/caseStudy2/css/style_catalog.css">
 <div class="catalog">
     <div class="cata-item">
@@ -22,13 +21,14 @@
                 </a>
             </span>
             <div class="dropdown-content-type">
-               <?php foreach ($_SESSION['typeDog'] as $key => $value ) :?>
-                <?php if ($key % 5 == 0) echo "<div class = 'col'>"?> 
-                <a href="http://localhost/CODEGYM/caseStudy2/data/control/detaildog.php?id=<?php echo $value['idDog'] ?>"><?php echo $value['ten'] ?></a>
-                <?php if ($key % 5 == 4) echo "</div>"?> 
-                <?php endforeach?>
+                <?php foreach ($_SESSION['typeDog'] as $key => $value) : ?>
+                    <?php if ($key % 5 == 0) echo "<div class = 'col'>" ?>
+                    <a href="http://localhost/CODEGYM/caseStudy2/data/control/detaildog.php?id=<?php echo $value['idDog'] ?>"><?php echo $value['ten'] ?></a>
+                    <?php if ($key == count($_SESSION['typeDog'])-1)
+                    {echo "</div>" ; }
+                    elseif ($key % 5 == 4)  {echo "</div>";} ?>   
+                <?php endforeach ?>
             </div>
         </div>
     </div>
-
 </div>

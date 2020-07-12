@@ -44,4 +44,38 @@ class DogDAO
         $result =$statement->fetchAll();
         return $result;
     }
+
+    public function editDog($idDog,$ten,$nguongoc,$dacdiem,$cannang,$tuoitho,$isHot,$banChay,$isHave,$price,$sale,$isdel){
+        $sql =  "UPDATE `product`.`dog` SET `ten` = ?, `nguongoc` = ?, `dacdiem` = ?, `cannang` = ?, `tuoitho` = ?, `isHot` = $isHot, `banChay` = $banChay, `isHave` = $isHave, `price` = ?, `sale` = ?, `isdel` = $isdel WHERE (`idDog` = ?)";
+        $statement = $this->pdo->prepare($sql);
+        $statement->bindParam(1, $ten);
+        $statement->bindParam(2, $nguongoc);
+        $statement->bindParam(3, $dacdiem);
+        $statement->bindParam(4, $cannang);
+        $statement->bindParam(5, $tuoitho);
+        $statement->bindParam(6, $price);
+        $statement->bindParam(7, $sale);
+        $statement->bindParam(8, $idDog);
+        $statement->execute();
+    }
+
+    public function delDog($idDog){
+        $sql =  "UPDATE `product`.`dog` SET `isdel` = 1 WHERE (`idDog` = ?)";
+        $statement = $this->pdo->prepare($sql);
+        $statement->bindParam(1, $idDog);
+        $statement->execute();
+    }
+
+    public function addDog($ten,$nguongoc, $dacdiem, $cannang,$tuoitho,$ishot,$banChay, $isHave,$price,$sale, $isdel){
+        $sql = "INSERT INTO `product`.`dog` (`ten`, `nguongoc`, `dacdiem`, `cannang`, `tuoitho`, `isHot`, `banChay`, `isHave`, `price`, `sale`, `isdel`) VALUES (?, ?, ?, ?, ?,$ishot, $banChay, $isHave, ?, ?, $isdel)";
+        $statement = $this->pdo->prepare($sql);
+        $statement->bindParam(1, $ten);
+        $statement->bindParam(2, $nguongoc);
+        $statement->bindParam(3, $dacdiem);
+        $statement->bindParam(4, $cannang);
+        $statement->bindParam(5, $tuoitho);
+        $statement->bindParam(6, $price);
+        $statement->bindParam(7, $sale);
+        $statement->execute();
+    }
 }

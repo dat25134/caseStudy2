@@ -21,7 +21,7 @@
                         <li><a href="#">Cài đặt</a></li>
                         <li><a href="#">Thông tin tài khoản</a></li>
                         <li class="divider"></li>
-                        <li><a href="#">Logout</a></li>
+                        <li><a href="http://localhost/CODEGYM/caseStudy2/data/control/logout.php">Logout</a></li>
                     </ul>
                 </div>
             <?php else : ?>
